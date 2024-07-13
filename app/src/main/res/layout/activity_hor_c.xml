@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HorC">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="cursive"
+            android:text=" Human\n    or\n   cpu?"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_back"
+            android:padding="10dp"
+            android:text="Human"
+            android:textSize="20sp"
+            android:id="@+id/human_btn"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_back"
+            android:padding="10dp"
+            android:text="Cpu"
+            android:textSize="20sp"
+            android:id="@+id/cpu_btn"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:hint="Enter the name"
+            android:textColorHint="@color/white"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:id="@+id/against_name"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_back"
+            android:padding="10dp"
+            android:text="Done"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:id="@+id/done_btn"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
